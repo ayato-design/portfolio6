@@ -244,6 +244,16 @@ h1 {
     width: 25px;
     height: 25px;
 }
+
+/* メイン */
+.sns_list {
+    display: grid;
+    grid-template-columns: 100%; /* 1列 */
+    gap: 20px; /* ブロックの隙間 */
+    margin: 20px 0px;
+    padding: 0 5%;
+}
+
 /* Works */
 .works {
     padding: 0 5%;
@@ -262,15 +272,5 @@ h1 {
 }
 h2 {
     font-size: 25px;
-}
-}
-
-/* メイン */
-.sns_list {
-    display: grid;
-    grid-template-columns: 100%; /* 1列 */
-    gap: 20px; /* ブロックの隙間 */
-    margin: 20px 0px;
-    padding: 0 5%;
 }
 }
