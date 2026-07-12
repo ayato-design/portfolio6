@@ -254,7 +254,7 @@ h1 {
     grid-template-columns: 100%; /* 1列 */
     gap: 20px; /* ブロックの隙間 */
     margin: 20px 0px;
-    padding: 0 5%;
+    padding: 0;
 }
 
 /* Works */
