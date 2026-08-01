@@ -58,25 +58,6 @@ img {
     transform: translateY(0);
 }
 
-/* ボタン */
-.button a {
-    background: #DC143C;
-    color: #FFFFFF;
-    border-radius: 3px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 200px;
-    padding: 20px;
-    transition: 0.3s ease-in-out;
-}
-.button a:hover {
-    background: #FFFFFF;
-    color: #DC143C;
-}
-
 /* ヘッダー */
 .profile {
     display: flex;
