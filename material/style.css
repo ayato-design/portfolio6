@@ -166,6 +166,7 @@ h1 {
 }
 .works_text h3 {
     font-size: 32px;
+    font-weight: normal;
     font-family: "Anton", sans-serif;
     margin: 20px 0;
 }
