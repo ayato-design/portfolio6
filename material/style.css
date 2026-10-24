@@ -58,6 +58,36 @@ img {
     transform: translateY(0);
 }
 
+/* 共通パーツ */
+.top_content {
+    padding: 0 15%;
+}
+.main_content {
+    padding-top: 30px;
+}
+.main_content_end {
+    padding: 30px 0;
+}
+.main_text {
+    padding-top: 10px;
+}
+.normal_list { /* 斜線横並びリスト */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.normal_list li {
+    padding-top: 5px;
+}
+.normal_list li::after {
+    color: #FFFFFF;
+    content: "/";
+    margin: 0 5px;
+}
+.normal_list li:last-child::after {
+    content: "";
+}
+
 /* ヘッダー */
 .profile {
     display: flex;
@@ -129,48 +159,27 @@ h1 {
 }
 
 /* WORKS */
-.works {
-    display: flex;
-    padding: 0 15%;
-}
 .works_box {
     display: flex;
-    align-items: center;     /* 上下中央 */
-    padding: 50px 0;
+    gap: 30px;
+    align-items: center;
 }
-h2 {
+.works_text h3 {
     font-size: 32px;
     font-family: "Anton", sans-serif;
-    font-weight: normal;
     margin: 20px 0;
 }
-.works_text p {
-    padding-bottom: 20px;
+.works_text h4 {
+    font-weight: normal;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    margin-top: 15px;
 }
-.works_text ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    flex-wrap: wrap;
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
-.works_text ul li {
-    display: inline;
-    padding-bottom: 5px;
-}
-.works_text ul li::after {
-    content: "/";
-    margin: 0 5px;
-    color: #FFFFFF;
-}
-.works_text ul li:last-child::after {
-    content: "";
-}
-.works a {
+.works_text a {
     color:#FFFFFF;
 }
-.works a:hover{
+.works_text a:hover {
     color:#DC143C;
 }
 
@@ -198,6 +207,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+    /* 共通パーツ */
+    .top_content {
+        padding: 0 5%;
+    }
 
     /* 戻るボタン */
     .back_button {
@@ -247,22 +261,29 @@ footer {
     }
 
     /* Works */
-    .works {
-        padding: 0 5%;
-    }
-    .works ul {
-        flex-wrap: wrap;
-    }
     .works_box {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 30px 0;
+        align-items: center;
     }
-    .works_image {
-        width: 60%;
-        margin: 30px auto 0 auto;
+    .works_text {
+        text-align: center;
     }
-    h2 {
+    .works_text h3 {
         font-size: 25px;
+        margin: 10px 0;
+    }
+    .works_text ul {
+        flex-direction: column;
+    }
+    .works_text ul li::after {
+        content: "";
+    }
+    .works_text ul li:last-child::after {
+        content: "";
+    }
+    .works_image img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
     }
 }
